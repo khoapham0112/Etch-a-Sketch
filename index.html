@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <div class="main">
+        <div class="menu">
+            <div class="color-picker">
+                <input type="color" id="penColor" value="#000000">
+                <label for="penColor">Pen Colour</label>
+            </div>
+            <button id="singleColour">Single Colour</button>
+            <button id="randomizeColour">Randomize Colour</button>
+            <button id="darkenColour">Darken Colour</button>
+            <button id="Size">Size</button>
+            <p>Size:</p>
+            <button id="Reset">Reset</button>
+        </div>
+        <div id="container">
+            <div id="grid"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    color: rgb(62, 166, 255);
+    flex-direction: column;
+}
+
+header {
+    padding: auto;
+    text-align: center;
+    font-family: 'Bitcount Grid Single';
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 4px;
+    width: 200px;
+    font-family: Roboto;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    color: rgb(62, 166, 255);
+    font-weight: 500;
+    font-family: Roboto;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgb(62, 166, 255);
+    border-radius: 2px;
+    padding: 9px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 660px;
+    height: 660px;
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#grid {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+}
+
+.color-picker {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+
+input[type="color"] {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
