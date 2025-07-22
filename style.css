@@ -96,3 +96,9 @@ label {
 p {
     text-align: center;
 }
+
+button.active {
+    background-color: rgb(62, 166, 255);
+    color: black;
+}
+
