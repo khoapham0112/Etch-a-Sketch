@@ -66,6 +66,7 @@ button {
     background-color: white;
     width: 600px;
     height: 600px;
+    display: grid;
 }
 
 .color-picker {
