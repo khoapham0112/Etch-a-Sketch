@@ -45,8 +45,20 @@ function changeColor(e) {
         e.target.style.backgroundColor = `${selectedColor}`;
     } else if ( currentMode == "Random Colour") {
         e.target.style.backgroundColor = `rgb(${Red}, ${Green}, ${Blue})`; 
-    }
-}
+    } else if ( currentMode == "Dark Colour"){
+    if (e.target.style.backgroundColor.match(/rgba/)) {
+        let currentOpacity = Number(e.target.style.backgroundColor.slice(-4, -1));
+            if (currentOpacity <= 0.9) {
+                e.target.style.backgroundColor = `rgba(0, 0, 0, ${currentOpacity + 0.1})`;
+                e.target.classList.add('gray');
+            }
+            } else if (e.target.classList.contains('gray') && e.target.style.backgroundColor == 'rgb(0, 0, 0)') {
+                return;
+            } else {
+                e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';  
+            }
+    }    
+} 
 
 singleColourbtn.addEventListener("click", () => {
     currentMode = "Single Colour";
