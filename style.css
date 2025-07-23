@@ -102,3 +102,7 @@ button.active {
     color: black;
 }
 
+#Size:active, #Reset:active {
+    background-color: rgb(62, 166, 255);
+    color: black;
+}

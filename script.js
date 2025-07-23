@@ -4,7 +4,7 @@ let randomizeColourbtn = document.querySelector("#randomizeColour");
 let darkenColourbtn = document.querySelector("#darkenColour");
 let Sizebtn = document.querySelector("#Size");
 let sizeText = document.querySelector("#sizeText");
-let Reset = document.querySelector("#Reset");
+let Resetbtn = document.querySelector("#Reset");
 let colorInput = document.querySelector("#penColor");
 
 let defaultSize = 16;
@@ -79,3 +79,12 @@ window.onload = () => {
     currentMode = "Single Colour";
     singleColourbtn.classList.add('active');
 }
+
+function reset(){
+    const grids = Array.from(bigGrid.children);
+    grids.forEach(grid => {
+        grid.style.backgroundColor = "white";
+    })
+}
+
+Resetbtn.addEventListener("click", reset);
